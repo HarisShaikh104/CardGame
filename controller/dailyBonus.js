@@ -3,7 +3,7 @@ const User = require('../db/userData')
 const router = express.Router()
 
 const dailyBonus = async (user) => {
-    const bonuses = [50, 100, 200, 400, 500, 750, 1000]
+    const bonuses = [50, 150, 300, 400, 500, 750, 1000]
     const currDate = new Date()
     const currUser = { deviceId: user.deviceId }
     const oldDate = user.dbDate
